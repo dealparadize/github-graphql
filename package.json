@@ -1,17 +1,36 @@
 {
-  "name": "datoz-test",
+  "name": "github-graphql",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apollo-boost": "^0.3.1",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "graphql": "^14.2.1",
+    "graphql-tag": "^2.10.1",
+    "i18next": "^15.0.9",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.15.0",
     "react": "^16.8.6",
+    "react-apollo": "^2.5.3",
+    "react-bootstrap": "^1.0.0-beta.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-i18next": "^10.6.1",
+    "react-icons": "^3.5.0",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docker:build": "sudo docker build -t sample-app .",
+    "docker:start": "sudo docker run -it -v ${PWD}:/usr/src/app -v /usr/src/app/node_modules -p 3000:3000 --rm sample-app"
   },
   "eslintConfig": {
     "extends": "react-app"

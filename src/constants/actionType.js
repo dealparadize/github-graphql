@@ -1,0 +1,5 @@
+export const SET_ERROR = 'SET_ERROR'
+export const SET_TOKEN = 'SET_TOKEN'
+export const SET_REPOS_FILTERED = 'SET_REPOS_FILTERED'
+export const SET_REPOS = 'SET_REPOS'
+export const SET_PROFILE = 'SET_PROFILE'
