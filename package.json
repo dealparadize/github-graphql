@@ -30,7 +30,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "docker:build": "sudo docker build -t sample-app .",
-    "docker:start": "sudo docker run -it -v ${PWD}:/usr/src/app -v /usr/src/app/node_modules -p 3000:3000 --rm sample-app"
+    "docker:start": "sudo docker run -it -v ${PWD}:/usr/src/app -v /usr/src/app/node_modules -p 3000:3000 --rm sample-app",
+    "heroku:deploy": "git push heroku master"
   },
   "eslintConfig": {
     "extends": "react-app"
